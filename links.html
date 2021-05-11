@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Vídeos Recomendados</title>
+    <title>Vídeos Recomendados - Alexsandro Schneider</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
         body {
-            font-family: Roboto;
+            font-family: Arial, sans-serif;
             font-size: 20px;
             padding: 20px;
             text-align: center;
@@ -24,14 +23,27 @@
             background-size: cover;
         }
 
-        img {
-            width: 20%;
-            height: auto;
+        a {
+            color: white;
         }
 
-        a {
-            color: #bfbfbf;
+        .iframe-container{
+            position: relative;
+            width: 75%;
+            padding-bottom: 56.25%; 
+            height: 0;
+            margin: 0 auto;
         }
+
+        .iframe-container iframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
     </style>
 </head>
 
@@ -40,10 +52,18 @@
     <h1>VIDEOS RECOMENDADOS!</h1>
     <p>Alguns vídeos que o Youtube permitiu incorporar &#128514 &#x1F602.</p>
     <p>DOOM Music!</p>
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/T12ygsp9Mvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="iframe-container">   
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/T12ygsp9Mvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <p>Teste da nave Starship SN10 da SpaceX!</p>
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/ODY6JWzS8WU?start=259" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p><a href="https://cc.uffs.edu.br/pessoa/alexsandro.meurer/index.html">VOLTAR à página inicial!</a></p>
+    <div class="iframe-container"> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ODY6JWzS8WU?start=259" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p style="line-height: 2;"><a href="https://cc.uffs.edu.br/pessoa/alexsandro.meurer/index.html">VOLTAR</a> à página inicial.</p>
 </body>
+
+<footer>
+    Photo by <a href="https://unsplash.com/@von_co?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivana Cajina</a> on <a href="https://unsplash.com/s/photos/dark-space?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</footer>
 
 </html>
