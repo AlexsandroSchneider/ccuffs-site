@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Site do Alexsandro Schneider</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-steam {
+            background: #383838;
+            color: white;
+        }
+        .fa-github {
+            background: #383838;
+            color: white;
+        }
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+
+        body {
+            font-family: Roboto;
+            font-size: 20px;
+            padding: 20px;
+            color: white;
+            height: 100%;
+            margin: 0;
+            /*background: #343a40;*/
+            /*background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/milky-way-over-the-sky-view-from-the-southern-royalty-free-image-1594935629.jpg);*/
+            background-image: url(img/milkyway.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        img {
+            width: 25%;
+            height: auto;
+        }
+
+        a {
+            color: #bfbfbf;
+        }
+
+
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="links.html">VIDEOS Recomendados!</a>
+    </div>
+
+    <div id="main">
+        <h2>LINKS!</h2>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Abrir Navegação</span>
+        <div style="text-align: center;">
+            <h1>Olá mundo!</h1>
+            <p>Essa é a minha primeira tentativa na criação de um site pessoal!</p>
+            <h2>Sobre mim</h2>
+            <p>Meu nome completo é Alexsandro Meurer Schneider. Eu nasci na cidade de Ivoti, Rio Grande do Sul, no dia 27/09/1994.</p>
+            <p>Concluí o ensino médio no ano de 2011.</p>
+            <p>Por muito tempo estive ocioso, porém o desejo de aprender sempre me acompanhou.</p>
+            <p>Em 2019 decidi fazer o ENEM e, em seguida, me inscrevi no SISU, acabei ganhando a vaga no curso de ciência da computação pela UFFS Campus Chapecó.</p>
+            <h4>Do que eu gosto:</h4>
+            <p>Gosto de todas as novidades tecnologicas: geração de energia renovável, veículos elétricos, lançamentos espaciais, interface cérebro-computador, inteligecia artifical, entre outras.</p>
+            <p>Ganhei meu primeiro computador aos 10 anos de idade e até hoje me mantenho fiel a PC Master Race.</p>
+            <p>Um dos primeiros jogos que tive contato no PC foi o Counter-Strike 1.6, joguei muito nas Lan Houses</p>
+            <p>Atualmente continuo jogando o bom e velho CS na sua versão mais recente, o Global-Offensive.</p>
+            <p>Também gosto de jogos como: Kerbal Space Program, Minecraft, The Witcher 3, Fallout 4, PUBG entre outros.</p>
+            <p>Gosto vários estilos de música: Rock'n'Roll, Metal, Pop, EDM, Rap.</p>
+            <p>Minhas bandas favoritas são: System of a Down, Metallica, Red Hot Chilli Peppers, Slipknot, AC/DC, etc... </p>
+            
+            <div>
+                <h2>Minhas redes sociais:</h2>
+                <a href="https://github.com/AlexsandroSchneider" class="fa fa-github" target="_blank"></a>
+                <a href="https://www.facebook.com/AlexsandroSchneiderMH" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://twitter.com/AlexsandroMH" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/alexsandromh" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://steamcommunity.com/id/alexsandromh" class="fa fa-steam" target="_blank"></a>
+            </div>    
+            <img src="img/thatsallfolks.png">
+        </div>
+    </div>
+      
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+      
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+</body>
+
+</html>
