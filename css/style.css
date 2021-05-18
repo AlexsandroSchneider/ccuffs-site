@@ -15,6 +15,7 @@
 
 body {
   background-color: grey;
+  min-width: 400px;
 }
 
 .fa {
